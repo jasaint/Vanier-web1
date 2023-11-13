@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href=""></a>
+        <a href=""></a>
+    </nav>
+    <header>
+        <div class="fade-in-text">
+            <h1>About me</h1>
+        </div>
+          <div class="fade-in-text2">
+        <h3>Jason Bou-Farah
+            <img src="./images/brush.png" alt=""
+            style="width: 30px;height: 30px;">
+        </h3>
+            
+    </div> 
+
+<br>
+
+    
+      
+    
+   
+    </header>
+     <!--sidebar-->  
+     <div id="mySideBar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a href="../index.html">Home</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+       
+    </div>
+
+    <script>
+    function openNav(){
+        document.getElementById("mySideBar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+        function closeNav(){
+            document.getElementById("mySideBar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+    
+
+     <!--sidebar-->  
+    <div class="intro">
+     <p> Hello!
+         <br> 
+My name is Jason Bou-Farah and I am currently studying in the Multimedia Integration program at Vanier College. As a person, I am quite creative, energetic and love to use sarcasm to mess around with people. Below you will find the three things I first think of relating to my day-to-day life.
+     </p>
+     </div>
+
+    <div style="margin-left: 25%;"></div>
+</div>
+
+    <br>
+    <section id="gallery">
+        <figure>
+            <div class="fade-in-pic zoom">
+                <a href="./images/20231003_094339.jpg">
+
+            <img src="images/20231003_094339.jpg" alt="">
+        
+                </a>
+            
+            <figcaption>Drawing is definitively my favorite leisure activity. Whether I get a sudden burst of ideas or simply have nothing to do, the first thing I do is grab either paper or my wacom tablet and start sketching away. I just love having a blank canvas that I can fill with whatever comes to mind. </figcaption>
+            </a> 
+        </figure>
+        <figure>
+            <div class="fade-in-pic zoom">
+                <a href="./images/pexels-davide-baraldi-11813187.jpg" target="blank">
+
+            <img src="./images/pexels-davide-baraldi-11813187.jpg" alt=""> 
+        
+                </a>
+            
+            <figcaption>Another activity that I really enjoy is web design. Starting from writing simple code to seeing a full fledged website will always fill me with joy. I love seeing the website progressively improve and come to life through experimentation, implementation of theory and personal knowledge.</figcaption>
+        </figure>
+        <figure>
+            <div class="fade-in-pic zoom">
+                <a href="./images/cat.jpg" target="blank">
+
+            <img src="images/cat.jpg" alt="">
+        
+                </a>
+            
+            <figcaption>Since we adopted her, Anou, my cat, has been a constant presence in my life. I used to have a strong dislike for change, and when I learned that we would be getting a cat, I was fearful. However, after a month or two, my fears and worries quickly faded away. Now, even if it means being woken up at 2 in the morning by her noisy meows, she brightens up my day through her sassy attitude and constant purrs. </figcaption>
+        </figure>
+        
+        
+    
+    </div>
+
+
+    
+
+        
+        
+        
+    </section>
+    <div class="footer">
+        <footer> contact: email@email.com</footer>
+        </div>
+</body>
+</html>

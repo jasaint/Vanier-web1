@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+figure img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  size: 150vh;
+  font: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+body {
+  background-image:url(../images/background2.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+}
+.intro {
+  background-image: url(../images/paintstroke4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  animation: fadeIn3 5s;
+}
+
+p {
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0.85rem;
+  text-justify: auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.box {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+}
+
+figure figcaption {
+  word-wrap: break-word;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  text-align: center;
+}
+/*SIDEBAR--------------------------------------------*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(177, 181, 185);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: aliceblue;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 25px 22px 0px -3px rgba(255,199,0,1);
+  -webkit-box-shadow: 25px 22px 0px -3px rgba(255,199,0,1);
+  -moz-box-shadow: 25px 22px 0px -3px rgba(255,199,0,1);
+  gap: 1.44rem;
+  padding: 2rem 2rem 10rem 2rem;
+}
+
+
+/*ANIMATIONS------------------------------------------------*/
+
+.fade-in-text {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.fade-in-text2 {
+  animation-name: fadeIn2;
+  animation-duration: 3s;
+}
+
+.fade-in-pic {
+  animation: fadeIn3 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(16 16 16 /1);
+  color: rgba(255, 255, 255, 0.95);
+  display: grid;
+  justify-items: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  figure img {
+    width: 100%;
+  }
+  #gallery {
+    grid-template-columns: 1fr;
+    padding: 0 1.2rem;
+    padding-bottom: 2rem;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  figcaption {
+    font-size: 0.5rem;
+  }
+  .intro{
+    margin: 0;
+    background-image: url(../images/paintstroke6.png);
+  }
+  p {
+    font-size: 0.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}

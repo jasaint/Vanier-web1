@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(250, 237, 208);
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+h1 {
+  /* rem refers to root element font size of 16px 
+  for example, 16px times 2.5 = 40px  */
+  font-size: 2.5rem;
+  color: brown;
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: azure;
+  /* padding:40px 120px 20px 30px;  */
+  padding: 10px 30px 35px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(13, 110, 78);
+}
+
+nav ul li a:hover {
+  color: rgb(7, 228, 92);
+}
+
+main {
+  padding: 20px;
+  background-color: beige;
+  display: flex;
+}
+
+article {
+  width: 50%;
+  background-color: brown;
+}
+section {
+  width: 20%;
+  background-color: cadetblue;
+}
+
+aside {
+  width: 30%;
+  background-color: chartreuse;
+}
+article,
+section,
+aside {
+  padding: 10px;
+  min-height: 500px;
+}
+
+div#band {
+  height: 100px;
+  background-color: cyan;
+  padding: 30px 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  padding: 20px;
+}
+.wrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-column-gap: 30px;
+  grid-row-gap: 30px; */
+  gap: 30px;
+}
+.grid-item {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
